@@ -10,7 +10,7 @@ Future<void> sendTrace() async {
 
 
 Future<String> writeSpan() async {
-  final exporter = CollectorExporter(Uri.parse('http://localhost:4318/v1/traces')); 
+  final exporter = CollectorExporter(Uri.parse('http://localhost:9411/api/v2/spans')); 
   
   print('exporter: $exporter');
   //final processor = SimpleSpanProcessor(exporter);
